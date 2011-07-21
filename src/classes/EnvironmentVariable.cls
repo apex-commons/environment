@@ -1,8 +1,8 @@
-global class GlobalVariable {
+global class EnvironmentVariable {
     
     global static String get(String name){
         String returnValue = null;
-        final Map<String,GlobalVariable__c> all = GlobalVariable__c.getAll();
+        final Map<String,EnvironmentVariable__c> all = EnvironmentVariable__c.getAll();
         if(    name != null 
             && name.trim() != null 
             && name.trim().length() > 0 
@@ -20,16 +20,16 @@ global class GlobalVariable {
             && name.trim() != null 
             && name.trim().length() != 0
         ){
-            GlobalVariable__c record = null;
+            EnvironmentVariable__c record = null;
             try{
                 record = [   
                     select id,value__c 
-                    from GlobalVariable__c 
+                    from EnvironmentVariable__c 
                     where name = :name
                 ];
             }catch(QueryException e){}
             if(record == null){
-                record = new GlobalVariable__c(
+                record = new EnvironmentVariable__c(
                      name     = name 
                     ,value__c = value
                 );

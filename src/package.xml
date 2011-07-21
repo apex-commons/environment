@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>GlobalVariable</members>
-        <members>GlobalVariableTest</members>
+        <members>EnvironmentVariable</members>
+        <members>EnvironmentVariableTest</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>GlobalVariable__c</members>
+        <members>EnvironmentVariable__c</members>
         <name>CustomObject</name>
     </types>
     <version>20.0</version>
