@@ -13,5 +13,5 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>Global Variable</label>
+    <label>Environment Variable</label>
 </CustomObject>
